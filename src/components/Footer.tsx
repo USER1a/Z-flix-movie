@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { ExternalLink, Github, Twitter, Facebook, Instagram, Mail } from 'lucide-react';
+import { ExternalLink, Github,Instagram, Mail } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,43 +11,54 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
-            <h3 className="text-white font-medium text-lg mb-4">Let's Stream V2.0</h3>
+            <h3 className="text-white font-medium text-lg mb-4">Z-FLIX </h3>
             <p className="text-white/70 text-sm">
-              Discover and enjoy the best movies and TV shows all in one place.Let's Stream V2.0 helps you find, explore, and watch your favorite content online.
+              Discover and enjoy the best movies and TV shows all in one place.Let's Z-flix helps you find, explore, and watch your favorite content online.
             </p>
           </div>
           
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-white font-medium mb-4">Explore</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link to="/" className="text-white/70 hover:text-white transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/movies" className="text-white/70 hover:text-white transition-colors">
-                  Movies
-                </Link>
-              </li>
-              <li>
-                <Link to="/tv" className="text-white/70 hover:text-white transition-colors">
-                  TV Shows
-                </Link>
-              </li>
-              <li>
-                <Link to="/trending" className="text-white/70 hover:text-white transition-colors">
-                  Trending
-                </Link>
-              </li>
-              <li>
-                <Link to="/search" className="text-white/70 hover:text-white transition-colors">
-                  Search
-                </Link>
-              </li>
-            </ul>
-          </div>
+          {/* Quick Links */}  
+          
+          {/* Social */}
+<div>
+  <h3 className="text-white font-medium mb-4">Connect</h3>
+  <div className="flex space-x-3">
+    <a 
+      href="https://zane-lol.vercel.app/" 
+      className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
+      aria-label="zane bio"
+    >
+      <User className="h-5 w-5 text-white" />
+    </a>
+    {/* Removed Twitter button */}
+
+    <a 
+      href="https://byzanebio.vercel.app/" 
+      className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
+      aria-label="intro"
+    >
+      <User className="h-5 w-5 text-white" />
+    </a>
+    <a 
+      href="https://instagram.com/zane_ox0" 
+      className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
+      aria-label="Instagram"
+    >
+      <Instagram className="h-5 w-5 text-white" />
+    </a>
+    <a 
+      href="mailto:kk2216157@gmail.com" 
+      className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
+      aria-label="Email"
+    >
+      <Mail className="h-5 w-5 text-white" />
+    </a>
+  </div>
+  <p className="mt-4 text-white/50 text-xs">
+    Powered by ZANE
+  </p>
+</div>
+
           
           {/* Legal */}
           <div>
@@ -87,9 +98,9 @@ const Footer = () => {
             <h3 className="text-white font-medium mb-4">Connect</h3>
             <div className="flex space-x-3">
               <a 
-                href="https://github.com/chintan992" 
+                href="https://zane-lol.vercel.app/" 
                 className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
-                aria-label="GitHub"
+                aria-label="zane bio"
               >
                 <Github className="h-5 w-5 text-white" />
               </a>
@@ -101,21 +112,21 @@ const Footer = () => {
                 <Twitter className="h-5 w-5 text-white" />
               </a>
               <a 
-                href="https://facebook.com/chintan992" 
+                href="https://byzanebio.vercel.app/" 
                 className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
-                aria-label="Facebook"
+                aria-label="intro"
               >
                 <Facebook className="h-5 w-5 text-white" />
               </a>
               <a 
-                href="https://instagram.com/chintan992" 
+                href="https://instagram.com/zane_ox0" 
                 className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5 text-white" />
               </a>
               <a 
-                href="mailto:chintanr21@gmail.com" 
+                href="kk2216157@gmail.com" 
                 className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
                 aria-label="Email"
               >
@@ -123,13 +134,13 @@ const Footer = () => {
               </a>
             </div>
             <p className="mt-4 text-white/50 text-xs">
-              Powered by TMDB
+              Powered by ZANE
             </p>
           </div>
         </div>
         
         <div className="mt-8 pt-4 border-t border-white/10 text-center text-white/50 text-xs">
-          <p>© {currentYear}Let's Stream V2.0 All rights reserved.</p>
+          <p>© {currentYear}Z-FLIX BY ZANE All rights reserved.</p>
           <p className="mt-1">
             This site does not store any files on its server. All contents are provided by non-affiliated third parties.
           </p>
